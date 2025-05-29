@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="src/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
+    <link rel="stylesheet" href="node_modules/hover.css/css/hover-min.css">
+    <link rel="stylesheet" type="text/css" href="src/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Магазин цветов</title>
+</head>
+<body>
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <a href="#">
+                <img src="images/icons/logo.png" class="wow animate__fadeInLeftBig" alt="Логотип">
+            </a>
+        </div>
+        <nav id="menu">
+            <button class="burger-close">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
+<g>
+	<g>
+		<path d="M300.188,246L484.14,62.04c5.06-5.064,7.852-11.82,7.86-19.024c0-7.208-2.792-13.972-7.86-19.028L468.02,7.872
+			c-5.068-5.076-11.824-7.856-19.036-7.856c-7.2,0-13.956,2.78-19.024,7.856L246.008,191.82L62.048,7.872
+			c-5.06-5.076-11.82-7.856-19.028-7.856c-7.2,0-13.96,2.78-19.02,7.856L7.872,23.988c-10.496,10.496-10.496,27.568,0,38.052
+			L191.828,246L7.872,429.952c-5.064,5.072-7.852,11.828-7.852,19.032c0,7.204,2.788,13.96,7.852,19.028l16.124,16.116
+			c5.06,5.072,11.824,7.856,19.02,7.856c7.208,0,13.968-2.784,19.028-7.856l183.96-183.952l183.952,183.952
+			c5.068,5.072,11.824,7.856,19.024,7.856h0.008c7.204,0,13.96-2.784,19.028-7.856l16.12-16.116
+			c5.06-5.064,7.852-11.824,7.852-19.028c0-7.204-2.792-13.96-7.852-19.028L300.188,246z"/>
+	</g>
+</g>
+</svg>
+            </button>
+            <ul>
+                <li>
+                    <a href="#flor" class="hvr-wobble-horizontal">Флорариумы</a>
+                </li>
+                <li>
+                    <a href="#present" class="hvr-wobble-horizontal">Акции</a>
+                </li>
+                <li>
+                    <a href="#order" class="hvr-wobble-horizontal">Как мы работаем</a>
+                </li>
+                <li>
+                    <a href="#delivery" class="hvr-wobble-horizontal">Доставка и оплата</a>
+                </li>
+            </ul>
+        </nav>
+        <button class="burger-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="36px" height="36px">
+                <path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"/>
+            </svg>
+        </button>
+        <button class="button button-call hvr-glow">Заказать звонок</button>
+        <div class="icon-call">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48px" height="48px">
+                <path fill="#273c11"
+                      d="M13,42h22c3.866,0,7-3.134,7-7V13c0-3.866-3.134-7-7-7H13c-3.866,0-7,3.134-7,7v22	C6,38.866,9.134,42,13,42z"/>
+                <path fill="#fff"
+                      d="M35.45,31.041l-4.612-3.051c-0.563-0.341-1.267-0.347-1.836-0.017c0,0,0,0-1.978,1.153	c-0.265,0.154-0.52,0.183-0.726,0.145c-0.262-0.048-0.442-0.191-0.454-0.201c-1.087-0.797-2.357-1.852-3.711-3.205	c-1.353-1.353-2.408-2.623-3.205-3.711c-0.009-0.013-0.153-0.193-0.201-0.454c-0.037-0.206-0.009-0.46,0.145-0.726	c1.153-1.978,1.153-1.978,1.153-1.978c0.331-0.569,0.324-1.274-0.017-1.836l-3.051-4.612c-0.378-0.571-1.151-0.722-1.714-0.332	c0,0-1.445,0.989-1.922,1.325c-0.764,0.538-1.01,1.356-1.011,2.496c-0.002,1.604,1.38,6.629,7.201,12.45l0,0l0,0l0,0l0,0	c5.822,5.822,10.846,7.203,12.45,7.201c1.14-0.001,1.958-0.248,2.496-1.011c0.336-0.477,1.325-1.922,1.325-1.922	C36.172,32.192,36.022,31.419,35.45,31.041z"/>
+            </svg>
+        </div>
+    </div>
+</header>
+<section class="main">
+    <div class="container">
+        <div class="main-info">
+            <h1 class="wow animate__rotateInDownLeft">Сад для вашего дома в Краснодаре</h1>
+            <p>Делайте сюрпризы для своих любимых незабываемыми вместе с Florarium!</p>
+            <button class="button hvr-glow" id="main-button">Посмотреть флорариумы</button>
+            <div class="main-info-advantages">
+                <div class="advantage hvr-float-shadow">
+                    <img src="images/icons/adv1.png" alt="Преимущество 1">
+                    <p>Очень неприхотливы и просты в уходе</p>
+                </div>
+                <div class="advantage hvr-float-shadow">
+                    <img src="images/icons/adv2.png" alt="Преимущество 2">
+                    <p>Поливать раз в неделю</p>
+                </div>
+                <div class="advantage hvr-float-shadow">
+                    <img src="images/icons/adv3.png" alt="Преимущество 3">
+                    <p>Доставим бесплатно в любое время дня и ночи</p>
+                </div>
+            </div>
+        </div>
+        <div class="main-image wow animate__slideInRight">
+            <img src="images/first-screen.png" alt="Суккулеты" srcset="">
+        </div>
+    </div>
+</section>
+<section class="about">
+    <div class="container">
+        <h2 class="wow animate__rotateInDownRight">О нас</h2>
+        <div class="about-block block1">
+            <img src="images/about1.png" alt="Цветы">
+            <p>Мы влюбленны в цветы и в свою работу. На протяжении 8 лет мы создаем красоту из живых цветов, составляем
+                композиции из эхеверии и крассулы эксперементируем с формами, цветами и сочетаниями.</p>
+        </div>
+        <div class="about-block block2">
+            <img src="images/about2.png" alt="Цветочая композиция">
+            <p>Мы дарим каждому клиенту настоящую радость и
+                любовь - это миссия нашего магазина. Вдохновляясь современными тенденциями во флористике, мы придумываем
+                что-то новое, стремимся показать самые необычные и интересные сочетания цветов. К созданию флорариумов
+                подходим с душой и любовью.</p>
+        </div>
+    </div>
+</section>
+<section class="flowers">
+    <div class="container">
+        <h2 class="wow animate__rotateInDownLeft">Наши растения</h2>
+        <div class="flowers-type">
+            <a href="#florarium" id="florarium">Флорариумы</a>
+            <a href="#orhidarium" id="orhidarium">Орхидариумы</a>
+        </div>
+        <div class="florarium" id="flor">
+            <div class="flowers-items">
+                <div class="first-item">
+                    <img src="images/items/flor_main.png" alt="Флорариум" class="hvr-grow">
+                    <h3>Ночная сказка</h3>
+                    <p>Флорариум с яркими суккулентами в вазе ручной работы</p>
+                    <div class="flower-item-price">5500 руб.</div>
+                </div>
+                <div class="flowers-item wow animate__zoomIn">
+                    <img src="images/items/flor_1.png" alt="Флорариум" class="hvr-grow">
+                    <h3>Суккуленты</h3>
+                    <div class="flower-item-price">2500 руб.</div>
+                </div>
+                <div class="flowers-item wow animate__zoomIn">
+                    <img src="images/items/flor_2.png" alt="Флорариум" class="hvr-grow">
+                    <h3>Мини сад</h3>
+                    <div class="flower-item-price">3000 руб.</div>
+                </div>
+                <div class="flowers-item wow animate__zoomIn">
+                    <img src="images/items/flor_3.png" alt="Флорариум" class="hvr-grow">
+                    <h3>Морской мир</h3>
+                    <div class="flower-item-price">2000 руб.</div>
+                </div>
+                <div class="flowers-item wow animate__zoomIn">
+                    <img src="images/items/flor_4.png" alt="Флорариум" class="hvr-grow">
+                    <h3>Марс</h3>
+                    <div class="flower-item-price">4500 руб.</div>
+                </div>
+            </div>
+            <button class="button button_flower hvr-glow">Оформить заказ</button>
+        </div>
+
+        <div class="orhidarium">
+            <div class="flowers-items2">
+                <div class="first-item">
+                    <img src="images/items/1.jpeg" alt="Композиция" class="hvr-grow">
+                    <h3>Композиция 1</h3>
+                    <p>Орхидариумы с яркими орхидеями в вазе ручной работы</p>
+                    <div class="flower-item-price">5500 руб.</div>
+                </div>
+                <div class="flowers-item wow animate__zoomIn">
+                    <img src="images/items/2.jpg" alt="Композиция" class="hvr-grow">
+                    <h3>Композиция 2</h3>
+                    <div class="flower-item-price">2500 руб.</div>
+                </div>
+                <div class="flowers-item wow animate__zoomIn">
+                    <img src="images/items/3.jpg" alt="Композиция" class="hvr-grow">
+                    <h3>Композиция 3</h3>
+                    <div class="flower-item-price">3000 руб.</div>
+                </div>
+                <div class="flowers-item wow animate__zoomIn">
+                    <img src="images/items/4.jpeg" alt="Флорариум" class="hvr-grow">
+                    <h3>Композиция 4</h3>
+                    <div class="flower-item-price">2000 руб.</div>
+                </div>
+                <div class="flowers-item wow animate__zoomIn">
+                    <img src="images/items/5.jpeg" alt="Композиция" class="hvr-grow">
+                    <h3>Композиция 5</h3>
+                    <div class="flower-item-price">4500 руб.</div>
+                </div>
+            </div>
+            <button class="button hvr-glow">Оформить заказ</button>
+        </div>
+
+    </div>
+</section>
+<section class="present" id="present">
+    <div class="container">
+        <div class="present-image">
+            <img src="images/present_img.png" alt="Raffaello">
+        </div>
+        <div class="present-info">
+            <h2 class="wow animate__rotateInDownRight">Подарок к каждому заказу</h2>
+            <p>К каждому букету прилагается бесплатная <span>открытка или сладкий презент</span>.</p>
+            <p>Закажите любой флорариум в период <span>с 20 апреля до 20 сентября</span> в наших магазинах и выберите в
+                подарок открытку и большую коробку конфет Rafaello или Roshen.</p>
+            <p>Это абсолютно бесплатно, потому что мы любим своих клиентов и хотим дарить вам радость так же, как вы
+                делаете это для своих любимых!</p>
+            <button class="button hvr-glow" id="present-button">Посмотреть флорариумы</button>
+        </div>
+    </div>
+</section>
+<section class="order" id="order">
+    <div class="container">
+        <h2 class="wow animate__rotateInDownLeft">Как мы работаем</h2>
+        <div class="order-point-white point1  hvr-grow">
+            <div class="order-point">
+                <div class="order-point-img">
+                    <img src="images/icons/ord1.png" alt="Сделать заказ">
+                </div>
+                <div class="order-point-info ">
+                    <h3>01. Сделайте заказ</h3>
+                    <p>Выберите букет и заполните форму заказа на сайте или позвоните нам. Укажите способ доставки.
+                        После
+                        оформления заказа наш менеджер свяжется с вами в течение 10 минут для уточнения деталей
+                        заказа.</p>
+                </div>
+            </div>
+        </div>
+        <div class="order-point-white point2 hvr-grow">
+            <div class="order-point">
+                <div class="order-point-img">
+                    <img src="images/icons/ord2.png" alt="Олатить">
+                </div>
+                <div class="order-point-info">
+                    <h3>02. Оплатите</h3>
+                    <p>Вы можете оплатить букет прямо на сайте онлайн или наличными нашему курьеру. </p>
+                </div>
+            </div>
+        </div>
+        <div class="order-point-white point3  hvr-grow">
+            <div class="order-point">
+                <div class="order-point-img">
+                    <img src="images/icons/ord3.png" alt="Ждите доставку">
+                </div>
+                <div class="order-point-info">
+                    <h3>03. Ждите доставку</h3>
+                    <p>В назначенный день и время мы доставим ваш букет абсолютно бесплатно. Он будет бережно упакован и
+                        вручен
+                        вам вместе с подарками, идущими в комплекте с букетом.</p>
+                </div>
+            </div>
+        </div>
+        <div class="order-point-white point4  hvr-grow">
+            <div class="order-point">
+                <div class="order-point-img">
+                    <img src="images/icons/ord4.png" alt="Фотоотчет">
+                </div>
+                <div class="order-point-info">
+                    <h3>04. Фотоотчет</h3>
+                    <p>Сделайте фотографию с нашим букетом, отметьте наш аккаунт в инстаграм @flowerfantasy и
+                        получите скидку
+                        10% на следующий заказ в течение месяца.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="gallery">
+    <div class="container">
+        <h2 class="wow animate__rotateInDownRight">Фотогалерея</h2>
+        <div class="gallery-photos">
+            <a href="images/gallery/gal1.png" class="gallery-popup">
+                <img src="images/gallery/gal1.png" alt="Цветочая композиция 1">
+            </a>
+            <a href="images/gallery/gal2.png" class="gallery-popup">
+                <img src="images/gallery/gal2.png" alt="Цветочая композиция 2">
+            </a>
+            <a href="images/gallery/gal3.png" class="gallery-popup">
+                <img src="images/gallery/gal3.png" alt="Цветочая композиция 3">
+            </a>
+            <a href="images/gallery/gal4.png" class="gallery-popup">
+                <img src="images/gallery/gal4.png" alt="Цветочая композиция 4">
+            </a>
+            <a href="images/gallery/gal_big.png" class="gallery-popup gallery-big">
+                <img src="images/gallery/gal_big.png" alt="Цветочая композиция 5">
+            </a>
+        </div>
+    </div>
+</section>
+<section class="feedback">
+    <div class="container">
+        <h2 class="wow animate__rotateInDownLeft">Отзывы наших клиентов</h2>
+        <div class="slider multiple-items feedback-items">
+            <div class="feedback-item">
+                <div class="feedback-photo">
+                    <img src="images/feedback/1.png" alt="Фотография автора отзыва">
+                </div>
+                <h3>Мурад</h3>
+                <p>Спасибо большое за вашу работу. Флорариум замечательный! Моя девушка была в восторге. Доставка была
+                    вовремя и курьер был очень вежливый. Буду советовать друзьям!</p>
+            </div>
+            <div class="feedback-item">
+                <div class="feedback-photo">
+                    <img src="images/feedback/2.png" alt="Фотография автора отзыва">
+                </div>
+                <h3>Кирилл</h3>
+                <p>Я покупал флорариум для с в подарок своей подруге. Хочу выразить свою благодарность за дополнительный
+                    подарок к покупке.</p>
+            </div>
+            <div class="feedback-item">
+                <div class="feedback-photo">
+                    <img src="images/feedback/3.png" alt="Фотография автора отзыва">
+                </div>
+                <h3>Юля</h3>
+                <p>Молодцы! Хорошо что есть такой сервис!!! Я покупаю уже несколько раз флорариумы. Всегда отличные
+                    композиции и быстрая доставка. </p>
+            </div>
+            <div class="feedback-item">
+                <div class="feedback-photo">
+                    <img src="images/feedback/1.png" alt="Фотография автора отзыва">
+                </div>
+                <h3>Мурад</h3>
+                <p>Спасибо большое за вашу работу. Флорариум замечательный! Моя девушка была в восторге. Доставка была
+                    вовремя и курьер был очень вежливый. Буду советовать друзьям!</p>
+            </div>
+            <div class="feedback-item">
+                <div class="feedback-photo">
+                    <img src="images/feedback/2.png" alt="Фотография автора отзыва">
+                </div>
+                <h3>Кирилл</h3>
+                <p>Я покупал флорариум для с в подарок своей подруге. Хочу выразить свою благодарность за дополнительный
+                    подарок к покупке.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="delivery-payment" id="delivery">
+    <div class="container">
+        <div class="delivery">
+            <h2 class="wow animate__rotateInDownLeft">Доставка</h2>
+            <div class="delivery-item">
+                <img src="images/icons/del1.png" alt="Ящик">
+                <h4>Самовывоз</h4>
+                <p>Бесплатно по адресу: Краснодар, проспект Некрасова, д. 24. Вход со двора.</p>
+            </div>
+            <div class="delivery-item">
+                <img src="images/icons/del2.png" alt="Грузовик">
+                <h4>Доставка нашим курьером</h4>
+                <p>Бесплатно по указанному вами адресу. Время доставки согласовывается с менеджером по телефону.</p>
+            </div>
+        </div>
+        <div class="payment">
+            <h2 class="wow animate__rotateInDownRight">Оплата</h2>
+            <div class="payment-item">
+                <img src="images/icons/pay1.png" alt="Пластиковые карточки">
+                <h4>Оплата картой на сайте</h4>
+                <p>Мы используем безопасные методы оплаты, и вы можете оплатить заказ прямо на сайте.</p>
+            </div>
+            <div class="payment-item">
+                <img src="images/icons/pay2.png" alt="Наличные деньги">
+                <h4>Наличными курьеру</h4>
+                <p>Вы можете произвести оплату наличными на руки нашему курьеру и получить чек заказа.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="logo">
+            <a href="#">
+                <img src="images/icons/logo.png" alt="Логотип">
+            </a>
+        </div>
+        <div class="social">
+            <a href="https://vk.com/">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="39px" height="24px">
+                    <image x="0px" y="0px" width="39px" height="24px"
+                           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAYCAQAAADThizGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfoBwkSETcNLVHUAAACnUlEQVQ4y4XUT2hcVRTH8TMJdjCFmpgQN8FiiVIi/ad2q9aFuPDPSlRU6kLBgoqbuhDdSBEE0VIVlCAKFRSbRSPGVTEExYUKtlaktWiNaGybRVOCjR1m5uNi7tx5b2aC523u75x7vu+d+849FRETsSUGomUX4ufo2FSMR9FOx98lPRpTMZjWq/FDNMPLynbEoBDCId1Wd2+KhfC0K6XoVzaEf3uSnhDCRk29dizDptR7oneEy/jIsGHDxvyBE0Ko+BVrdqXYsDn8knGfoJ6jB8DWMI+zKmnTi623COFODUxnwNECbrsmPkxqk2V8L8KzBUC4Tg2fJjWL30u442m9gJrNpVN+QIRxNRzOSdNoulkIr6DZB/cYeC35d2vgCyFC+Bg116fgpDo+yzg9uAkXcdaQEKpOYs2WNu5W8H5OexfsEQ72wQ2aB/ck7+vghZZquT5H3WQ+v4s4Y6gP7oRpcDD57tLE1+1ebTl3auJoTtwH3vNqCXck99eXNghh3BJWW4V2cO0C70uqYg6cLuEOJNi8a5JnBjzcuSntxZhlnDOa9KhTKfmfvHnUrG8856qkqxqYK1y76CwfBLO5oSecBDPF7V3PGTQ82g8XPgAvZV31kL02FnYMGDNQ0LtdKgOLuCE/gsfX+ZZJi1j1lpHs22m5CCwnbLaEmkf64t7If/Yvt2fvNsud0dWdssMKGp7pg5vBonc0UbO3kHMJl93SiwvbnAeHCyWVL9ndVsC+HNmjht9s6lfUDY6D855S7cJ9J4St/uwCPgne7H/oV6eSuOCQ+91kxLWOFQbUZALuN5QG6AJW1u+p2yz0Ge6dpm0Di7a2Pi6EXd7OtwN+SnOwfSjflmANz1fE/9pY3BjVuBJLsdgVqcT2GMnqVJz7Dxd8v+tb/s34AAAAAElFTkSuQmCC"/>
+                </svg>
+            </a>
+            <a href="https://www.facebook.com/?locale=ru_RU">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="17px" height="30px">
+                    <image x="0px" y="0px" width="17px" height="30px"
+                           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAeCAQAAABgMj2kAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfoBwkSEjcmAAIXAAABIklEQVQ4y+WSsS9DURTGf9WHSTWxNJGIxNDFYDLrP8Bsa7pYJGazmKxdxdyE/6FCTCTdLdVEYnxBFW39DJ533+vCYPOd5dxzvnvud865SM4Kbtmy55tfGHpUkAyWabEO9LlnAECVKFuhYk9tWzNKYx1zj5yqxxZzsRyl6oe3zkxo62iU6tikQJP35LRBjXlgEQK/pa4mfsOAy1BlAXhI/DrQoIuMuQmUCBglfgk4+U5M8SMi9thlGqhMZLoAvLCPA8fGxsZeWUjkNpNIrF6jdiZmkTXt/ELLr+RCkTIAfYbpxVKG42M6x7t0hWf56dbZYRZYY4k5YgBWgHMAnjgI2ttqOew3dPU3Hf1LSvi7I+CCMQBVXjOcdNDbPqerG3oYFvAJ+hcHzYH18AoAAAAASUVORK5CYII="/>
+                </svg>
+            </a>
+            <a href="https://www.instagram.com/">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        width="29px" height="29px">
+                    <image x="0px" y="0px" width="29px" height="29px"
+                           xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAdCAQAAAD8mq+EAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfoBwkSExsNw1+1AAABbUlEQVQ4y62Vv0rDUBSHPwOKLmYQacDBRfABXFz6AsUX0PfwCXTv3rmrTu5dBRFcSgahmIKDGAcd1KV+DonahrS9Vc8ZAvfej1/On3suIia2zQyzzLaJyJKwzwUbfHDPB/MsYouIJw64xMRc7diQIG/YUXMTbKudQOzLO2obM0eBirs2XS6VR2aowyDwWNUrV0QcKOpdEJo58lZtinij0ZRMtuiSkpPSpQXAAxE7QP59pkY1sVfW8LX89kzc89KBx+WZm7ofThyqfQ+NxdhD++qwaINvr0V76pmrYyurnqm9eWhL7U+ABdxXW5NoNU1HwCnvldV3Tsu9cauopmpcU5pYTWerbvLGc02xnnljs3oTJu2RNeIaNGaNx9noNZQtUG2RYm9GrAtk+B/r+qdumtbDhKBFzF1Tc1O7EzEGoPO8bIlpd3aWrcMis+nHG47MIs6JOFlQ84SI8z/M4fHpn/ESEOP2z/QvKvmLN+cTqTYaNTQI6DoAAAAASUVORK5CYII="/>
+                </svg>
+            </a>
+        </div>
+        <div class="contacts">
+            <span>+912 19 999 99</span>
+            <span>+912 72 733 93 93</span>
+            <button class="button button-call hvr-glow">Заказать звонок</button>
+        </div>
+        <div class="rights">
+            <span>©2020. Все права защищены</span>
+        </div>
+        <div class="confidentiality">
+            <a href="#">Политика конфиденциальности</a>
+        </div>
+    </div>
+</footer>
+
+<img class="img1 wow animate__fadeInLeftBig" src="images/background/fl1.png" alt="Суккулент">
+<img class="img2 wow animate__fadeInRightBig" src="images/background/fl2.png" alt="Суккулент">
+<img class="img3 wow animate__fadeInLeftBig" src="images/background/fl3.png" alt="Суккулент">
+<img class="img4 wow animate__fadeInRightBig" src="images/background/fl4.png" alt="Суккулент">
+<img class="img5 wow animate__fadeInLeftBig" src="images/background/fl5.png" alt="Суккулент">
+
+<div class="window_call_back">
+    <div class="call_back">
+        <div class="container_call_back">
+            <h2>Oбратный звонок</h2>
+            <p>Ваш телефон</p>
+            <input type="text" class="popup_input">
+            <div class="error_message">Введите номер телефона</div>
+            <button id="popup_button" class="hvr-glow">Перезвонить мне</button>
+            <img src="images/items/1.jpeg" alt="Композиция" class="call_back_img">
+            <div class="close"></div>
+            <div class="success_form">
+                <p>Спасибо! Мы перезвоним вам в течение нескольких минут!</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="window_order_form">
+    <div class="order_form">
+        <div class="container_order_form">
+            <h2>Оформление заказа</h2>
+            <p>Заполните данные для заказа </p>
+            <span>1. Личные данные</span>
+            <input type="text" class="popup_order_input order_name" placeholder="Ваше имя" id="name">
+            <div class="error_message">Введите ваше имя</div>
+            <input type="tel" class="popup_order_input order_phone" placeholder="Ваш телефон" id="phone">
+            <div class="error_message">Введите номер телефона</div>
+            <textarea class="popup_order_input order_details" placeholder="Детали вашего заказа"
+                      id="details"></textarea>
+            <div class="error_message">Введите данные о вашем заказе</div>
+            <button class="order_button hvr-glow">Заказать</button>
+            <img src="images/items/flor_main.png" alt="Композиция" class="call_back_img">
+            <div class="close"></div>
+        </div>
+    </div>
+    <div class="success_order_form">
+        <div class="container_success_order">
+            <h2>Спасибо за ваш заказ!</h2>
+            <p>После оформления заказа мы свяжемся с вами, чтобы подтвердить заказ. На следующий день после
+                оформления заказа ваша посылка будет отправлена в место назначения. Когда ваш заказ прибудет в
+                почтовое отделение, вам придет sms-оповещение на указанный номер телефона.
+            </p>
+            <button class="button-success hvr-glow">Продолжить покупки</button>
+            <div class="close order-close"></div>
+        </div>
+    </div>
+</div>
+
+<script src="scripts/jquery-3.7.1.js"></script>
+<script src="scripts/jquery.magnific-popup.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="scripts/wow.min.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>
